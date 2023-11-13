@@ -10,12 +10,12 @@ body {
 header {
     background-color: #007BFF;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 header img {
-    max-width: 50%;
+    max-width: 30%;
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
