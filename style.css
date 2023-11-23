@@ -1,79 +1,103 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
-    color: #333;
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
 header {
-    background-color: #2a2b2c;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  background-color: #2a2b2c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 header img {
-    max-width: 10%;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
+  max-width: 5%;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-section {
-    margin: 20px;
+header h1 {
+  font-size: 24px;
 }
 
+/* Bio section styles */
+#bio {
+  padding: 20px;
+  text-align: center;
+}
+
+#bio p {
+  font-size: 18px;
+}
+
+/* Projects section styles */
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
 .project {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    flex: 1;
-    max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  flex: 1;
+  max-width: 300px;
 }
 
 .project:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .project h3 {
-    color: #007BFF;
+  color: #007BFF;
 }
 
 .project p {
-    color: #555;
+  color: #555;
 }
 
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/* Contact section styles */
 #contact {
-    background-color: #f0f0f0;
-    padding: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
 }
 
 #contact h2 {
-    color: #333;
+  color: #333;
+  font-size: 24px;
 }
 
 #contact p {
-    font-size: 0.9em;
-    color: #555;
+  font-size: 18px;
+  color: #555;
+}
+
+
+@media only screen and (max-width: 768px) {
+  header img {
+      max-width: 50%;
+  }
+
+  .project {
+      flex: 100%;
+      max-width: 100%;
+  }
 }
