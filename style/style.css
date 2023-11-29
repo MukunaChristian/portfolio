@@ -15,8 +15,8 @@ body {
 
 /* Header styles */
 header {
-  background-color: #2a2b2c;
-  color: #fff;
+  background-color: #B68E11;
+  color: #1e160b;
   padding: 20px;
   text-align: center;
 }
@@ -63,7 +63,7 @@ header h1 {
 
 .project {
   width: 30em;
-  background-color: #fff;
+  background-color: #f3F0F0;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1em 2em;
@@ -81,7 +81,7 @@ header h1 {
 }
 
 .project h3 {
-  color: #007bff;
+  color: #B68E11;
   display: flex;
   /* justify-content: center; */
 }
@@ -92,7 +92,7 @@ header h1 {
   /* justify-content: center; */
 }
 .contact {
-  background-color: #f0f0f0;
+  background-color: #C4B397;
   padding: 2em;
   text-align: center;
 }
