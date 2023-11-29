@@ -1,17 +1,17 @@
 /* Reset styles */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 /* Body styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
+  font-size: 1em;
 }
+
 
 /* Header styles */
 header {
@@ -26,78 +26,95 @@ header img {
   border-radius: 50%;
   margin-bottom: 20px;
 }
+.projects-parent {
+  width: 100%;
+}
 
 header h1 {
   font-size: 24px;
 }
 
-/* Bio section styles */
 #bio {
+  display: flex;
+  justify-content: center;
   padding: 20px;
   text-align: center;
+  width: 100%;
+}
+.title-child {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 #bio p {
-  font-size: 18px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-/* Projects section styles */
-.projects {
-  display: flex;
+.projects-parent {
+  display: flex ;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px;
 }
 
 .project {
+  width: 30em;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em 2em;
+  margin: 1rem;
+  box-shadow: 0 1px 8px rgba(#D9480F);
   transition: transform 0.3s ease-in-out;
   flex: 1;
-  max-width: 300px;
+  box-shadow: #D9480F;
 }
+
+
 
 .project:hover {
   transform: scale(1.05);
 }
 
 .project h3 {
-  color: #007BFF;
+  color: #007bff;
+  display: flex;
+  /* justify-content: center; */
 }
 
 .project p {
   color: #555;
+  display: flex;
+  /* justify-content: center; */
 }
-
-/* Contact section styles */
-#contact {
+.contact {
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 2em;
   text-align: center;
 }
 
-#contact h2 {
+.contact h2 {
   color: #333;
   font-size: 24px;
 }
 
-#contact p {
+.contact p {
   font-size: 18px;
+  height: 150%;
   color: #555;
 }
 
-
 @media only screen and (max-width: 768px) {
   header img {
-      max-width: 50%;
+    max-width: 50%;
   }
 
   .project {
-      flex: 100%;
-      max-width: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
 }
