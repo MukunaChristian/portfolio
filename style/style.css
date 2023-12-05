@@ -1,3 +1,13 @@
+/* The animation code */
+@keyframes example {
+  from {box-sizing: border-box; red;}
+  to {background-color: yellow;}
+}
+
+/* The element to apply the animation to */
+
+
+
 /* Reset styles */
 * {
   box-sizing: border-box;
@@ -6,16 +16,15 @@
 /* Body styles */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f3F0F0;
+  background-color: #f3f0f0;
   color: #333;
   line-height: 1.6;
   font-size: 1em;
 }
 
-
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #C4B397;
+  background-color:#828282;
   overflow: hidden;
 }
 
@@ -31,8 +40,8 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #B68E11;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 /* Add a color to the active/current link */
@@ -40,20 +49,10 @@ body {
   color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Header styles */
 header {
-  background-color: #B68E11;
-  color: #1e160b;
+  background-color: #B8B8B8;
+  color: white;
   padding: 20px;
   text-align: center;
 }
@@ -85,6 +84,8 @@ header h1 {
 }
 
 #bio p {
+  font-weight: 500;
+  width: 50%;
   font-size: 20px;
   display: flex;
   justify-content: center;
@@ -92,55 +93,52 @@ header h1 {
 }
 
 .projects-parent {
-  display: flex ;
+  gap: 2em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   padding: 20px;
+  box-shadow: black;
+
 }
 
 .project {
-  width: 30em;
-  background-color: #f3F0F0;
+  width: 20%;
+  height: 20%;
+  background-color: #f3f0f0;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 8px #FFF4E6;
   padding: 1em 2em;
-  margin: 1rem;
   transition: transform 0.3s ease-in-out;
-  flex: 1;
+  text-align: center;
 }
-
-
-
 .project:hover {
   transform: scale(1.05);
+
+  
 }
 
 .project h3 {
-  color: #B68E11;
+  justify-content: center;
+  text-align: center;
+  color: black;
   display: flex;
-  /* justify-content: center; */
 }
 
 .project p {
+  align-items: center;
+  justify-content: center;
   color: #555;
   display: flex;
-  /* justify-content: center; */
 }
 .contact {
-  background-color: #C4B397;
-  padding: 2em;
+  width: 250em;
+  color: white;
+  background-color: #828282 ;
+  padding: 1em;
   text-align: center;
-}
-
-.contact h2 {
-  color: #333;
-  font-size: 24px;
-}
-
-.contact p {
-  font-size: 18px;
-  height: 150%;
-  color: #555;
 }
 
 @media only screen and (max-width: 768px) {
