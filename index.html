@@ -2,18 +2,20 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./style/style.css" />
+    <script src="/script/top.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christian Mukuna Mbuyi's Portfolio</title>
   </head>
   <body>
-
-    <div class="topnav">
-      <a class="active" href="#home">##</a>
-      <a href="#news">##</a>
-      <a href="#contact">##</a>
-      <a href="#about">##</a>
-    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" >Home</a>
+      <a href="#news">About</a>
+      <a href="#contact">Services</a>
+      <a href="#about">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+  </div>
     <header>
       <h1>HI, I'M Christian Mukuna Mbuyi</h1>
       <h2>Software Developer</h2>
@@ -26,19 +28,53 @@
         amazing together!
       </p>
     </div>
+    
+    <div class="email-input">
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="email">Send me an email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    
     </header>
 
  
     <section id="bio" >
-      <!-- <p>
-        Welcome to my coding world! I'm Christian Mukuna Mbuyi, an enthusiastic
-        developer fueled by a passion for crafting innovative projects. With a
-        love for problem-solving and creative thinking, I strive to bring ideas
-        to life through elegant and efficient code. Let's build something
-        amazing together!
-      </p> -->
+ 
+      <section class="about-me">
+        <h1>About Me</h1>
+        <h3>Front-End Developer</h3>
+        <p>I'm a passionate front-end web developer dedicated to crafting clean code and pixel-perfect designs. I excel at making websites more interactive through web animations, ensuring an engaging user experience. My responsive designs guarantee accessibility for all users, regardless of their device. Let's create something amazing together!</p>
     </section>
-    <div><h2 class="title-child">Projects</h2></div>
+   
+  
+    
+    </section>
+
+    <section class="service">
+      <h1>Services</h1>
+      <ul>
+          <li>
+              <h3>Front-End Development</h3>
+              <p>Building responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+              <p>Implementing front-end frameworks like React, Vue.js, or Angular for dynamic web applications.</p>
+              <p>Creating interactive user interfaces with animations and transitions to enhance user experience.</p>
+              <p>Ensuring cross-browser compatibility and accessibility standards for broader reach.</p>
+          </li>
+          <li>
+              <h3>Back-End Development</h3>
+              <p>Developing server-side logic and APIs using Spring Boot.</p>
+              <p>Implementing RESTful services for efficient data communication between front-end and back-end.</p>
+              <p>Integrating databases (SQL or NoSQL) and managing data persistence securely.</p>
+              <p>Handling authentication and authorization processes to ensure application security.</p>
+          </li>
+      </ul>
+  </section>
+
+  
+    <!-- <div>
+      <h2 class="title-child">Projects</h2></div>
 
     <div class="  projects-parent">
       <div class="project">
@@ -112,7 +148,62 @@
       </div>
     </div>
     
-  </div>
+  </div> -->
+
+  <section class="projects-section">
+    <div>
+        <h2 class="projects-title">Projects</h2>
+    </div>
+
+    <div class="projects-container">
+        <div class="project-item">
+            <h3>Movie App</h3>
+            <p>Description: A desktop application for booking movies.</p>
+            <p>Language(s): Java, SQLite (Swing)</p>
+            <a href="https://github.com/MukunaChristian/MovieApp.git" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-item">
+            <h3>Login-and-Register-form</h3>
+            <p>Description: An Android application for login and registration.</p>
+            <p>Language(s): Java (Android Studio and MySQL)</p>
+            <a href="https://github.com/MukunaChristian/Login-and-Register-from.git" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-item">
+            <h3>Storage-Rental-System-FrontEnd</h3>
+            <p>Description: An online storage rental system.</p>
+            <p>Language(s): Angular framework, Java (backend)</p>
+            <a href="https://github.com/MukunaChristian/Storage-Rental-System-2.0-FrontEnd.git" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-item">
+            <h3>Job-Search-System</h3>
+            <p>Description: A job search system.</p>
+            <p>Language(s): React framework, Java (backend)</p>
+            <a href="https://github.com/MukunaChristian/Job-Search-System.git" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-item">
+            <h3>Calendar</h3>
+            <p>Description: Simple calendar with React</p>
+            <a href="https://github.com/MukunaChristian/Calendar.git" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-item">
+            <h3>React-App-storyBook</h3>
+            <p>Description: Simple React Project with storyBook</p>
+            <a href="https://github.com/MukunaChristian/React-App-Storybook.git" class="project-link">View Project</a>
+        </div>
+    </div>
+</section>
+
+  <div class="cta-box">
+    <h2>Let Me Make Your Dreams Come True</h2>
+    <p>Ready to bring your ideas to life? Let's work together!</p>
+    <a href="#" class="cta-btn">Hire Me</a>
+</div>
+
   <div class="contact">
     <h2>Contact</h2>
     <p>
@@ -120,7 +211,7 @@
        <a > 221478302@mycput.ac.za </a> or
       <a 
         >christianmbuyimukuna@gmail.com</a>
-      or 0683806340.
+     .
     </p>
 
  
