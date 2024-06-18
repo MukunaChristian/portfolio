@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <link rel="stylesheet" href="./style/style.css" />
     <script src="/script/top.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christian Mukuna Mbuyi's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1200, // Duration of the animation in milliseconds
+  });
+</script>
+
   </head>
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="#home" >Home</a>
-      <a href="#news">About</a>
-      <a href="#contact">Services</a>
-      <a href="#about">Skills</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
-  </div>
-    <header>
+    </div>
+    <header id="home">
       <h1>HI, I'M Christian Mukuna Mbuyi</h1>
       <h2>Software Developer</h2>
       <div class="text">
@@ -30,7 +39,7 @@
     </div>
     
     <div class="email-input">
-      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <form action="mailto:christianmbuyimukuna@gmail.com" method="post" enctype="text/plain">
         <label for="email">Send me an email:</label><br>
         <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
         <button type="submit">Send</button>
@@ -40,9 +49,7 @@
     </header>
 
  
-    <section id="bio" >
- 
-      <section class="about-me">
+      <section class="about-me fade-in " id="about">
         <h1>About Me</h1>
         <h3>Front-End Developer</h3>
         <p>I'm a passionate front-end web developer dedicated to crafting clean code and pixel-perfect designs. I excel at making websites more interactive through web animations, ensuring an engaging user experience. My responsive designs guarantee accessibility for all users, regardless of their device. Let's create something amazing together!</p>
@@ -50,9 +57,9 @@
    
   
     
-    </section>
+   
 
-    <section class="service">
+    <section class="service fade-in-left  " id="services">
       <h1>Services</h1>
       <ul>
           <li>
@@ -73,86 +80,11 @@
   </section>
 
   
-    <!-- <div>
-      <h2 class="title-child">Projects</h2></div>
 
-    <div class="  projects-parent">
-      <div class="project">
-        <h3>Movie App</h3>
-        <p>
-          Description: A desktop application for booking movies.
-        </p>
-        <p> Language(s):
-          Java, SQLite (Swing)</p>
-        <a href="https://github.com/MukunaChristian/MovieApp.git">View Project</a
-        >
-      </div>
 
-      <div class="project child2">
-        <h3>Login-and-Register-form</h3>
-        <p>
-          Description: An Android application for login and registration.
-        </p>
-        <p> Language(s): Java (Android Studio and MySQL).</p>
-
-        <a href="https://github.com/MukunaChristian/Login-and-Register-from.git">View Project</a
-        >
-      </div>
-
-   
-    </div>
-
-    <div class="  projects-parent">
-  
-      <div class="project child3">
-        <h3>Storage-Rental-System-FrontEnd</h3>
-        <p>
-          Description: An online storage rental system.</p>
-          <p> Language(s): Angular framework, Java (backend)</p>
-
-        <a
-          href="https://github.com/MukunaChristian/Storage-Rental-System-2.0-FrontEnd.git"
-          >View Project</a
-        >
-      </div>
-
-      <div class="project child4">
-        <h3>Job-Search-System</h3>
-        <p>
-          Description: A job search system.
-        </p>
-        <p>Language(s): React framework, Java (backend).</p>
-        <a href="https://github.com/MukunaChristian/Job-Search-System.git"
-          >View Project</a
-        >
-      </div>
-   
-    <div class="  projects-parent">
-  
-   
-      <div class="project child5">
-        <h3>Calendar</h3>
-        <p>Description: Simple calendar with React</p>
-        
-          <a href="https://github.com/MukunaChristian/Calendar.git"
-            >View Project</a>
-        
-      </div>
-
-      <div class="project child6">
-        <h3>React-App-storyBook</h3>
-        <p>Description: Simple React Project with storyBook</p>
-
-          <a href="https://github.com/MukunaChristian/React-App-Storybook.git"
-            >View Project</a>      
-      </div>
-    </div>
-    
-  </div> -->
-
-  <section class="projects-section">
+  <section class="projects-section fade-in-right " id="projects">
     <div>
-        <h2 class="projects-title">Projects</h2>
+        <h1 class="projects-title">Projects</h1>
     </div>
 
     <div class="projects-container">
@@ -197,24 +129,30 @@
         </div>
     </div>
 </section>
+<div class="white-line2"></div>
 
-  <div class="cta-box">
+  <div class="cta-box fade-in">
     <h2>Let Me Make Your Dreams Come True</h2>
     <p>Ready to bring your ideas to life? Let's work together!</p>
     <a href="#" class="cta-btn">Hire Me</a>
 </div>
-
-  <div class="contact">
-    <h2>Contact</h2>
-    <p>
-      Feel free to reach out at   
-       <a > 221478302@mycput.ac.za </a> or
-      <a 
-        >christianmbuyimukuna@gmail.com</a>
-     .
-    </p>
-
+ <div class="white-line"></div>
+<section id="contact" class="contact fade-in">
+  <h2>Contact</h2>
+  <p>
+    Feel free to reach out at:
+  </p>
  
-  </div>
+  <a href="https://www.instagram.com/christian_mukunac_1?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank">
+    <img class="icon-img fade-in-right" src="/image/instagram.png" alt="Instagram">
+  </a>
+  <a href="mailto:christianmbuyimukuna@gmail.com">
+    <img class="icon-img" src="/image/gmail.png" alt="Gmail">
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=100009372905098&mibextid=LQQJ4d" target="_blank">
+    <img class="icon-img fade-in-left" src="/image/facebook.png" alt="Facebook">
+  </a>
+</section>
+
   </body>
 </html>

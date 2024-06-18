@@ -84,12 +84,12 @@ body {
 }
 
 .about-me h1 {
-  color: #333;
+  color:white ;
   margin-bottom: 20px;
 }
 
 .about-me h3 {
-  color: #555;
+  color: #9c9c9c;
   margin-bottom: 10px;
 }
 
@@ -128,7 +128,7 @@ body {
 }
 
 .service h1 {
-  color: #333;
+  color: white;
   margin-bottom: 30px;
 }
 
@@ -150,7 +150,7 @@ body {
 }
 
 .service h3 {
-  color: #555;
+  color: #9c9c9c;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -189,7 +189,6 @@ body {
 
 .projects-title {
   text-align: center;
-  font-size: 36px;
   color: white !important;
   margin-bottom: 30px;
 }
@@ -213,6 +212,8 @@ body {
 .project-item h3 {
   margin-bottom: 10px;
   font-size: 20px;
+  color: #9c9c9c;
+
 }
 
 .project-item p {
@@ -224,22 +225,22 @@ body {
 
 .project-link {
   align-self: center;
-  background-color: #04AA6D;
+  background-color: #7c7c7c;
   color: #fff;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 10px 16px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .project-link:hover {
-  background-color: #3e8e6b;
+  background-color: #000000;
 }
 
 
 /* CTA Box styles */
 .cta-box {
-  background-color: #04AA6D;
+  background-color: #252424;
   color: #fff;
   text-align: center;
   padding: 50px;
@@ -259,10 +260,10 @@ body {
 
 .cta-btn {
   display: inline-block;
-  background-color: #fff;
-  color: #04AA6D;
+  background-color: #7c7c7c;
+    color: white;
   font-size: 18px;
-  padding: 12px 24px;
+  padding: 10px 30px;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -287,15 +288,17 @@ body {
 }
 
 .email-input button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+  padding: 15px 50px;
+  background-color: #7c7c7c;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+
 }
 
 .email-input button:hover {
-  background-color: #45a049;
+  background-color: #000000;
 }
 
 
@@ -322,6 +325,48 @@ header {
   
 }
 
+/* style.css */
+
+/* General fade-in for text */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade-in from left for services */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade-in from right for projects */
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.icon-img{
+  width: 2em;
+}
+
 .text{
   display: flex;
   align-items: center;
@@ -341,12 +386,7 @@ header p{
 
 }
 
-#bio {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
+
 .title-child {
   text-align: center;
   display: flex;
@@ -398,8 +438,24 @@ header p{
   width: 100%;
 
 }
+.white-line {
+  height: 2px;
+  width: 50%;
+  margin: auto;
+  background: linear-gradient(to left, transparent, #fff, transparent);
+  border: none;
+}
+.white-line2 {
+  height: 2px;
+  width: 55%;
+  margin: auto;
+  background: linear-gradient(to left, transparent, #fff, transparent);
+  border: none;
+  position: relative;
+  top: 1.2em;
+}
 .contact {
-  background-color: #23424a;
+  background-color: #252424;
   padding: 1em 1em;
   color: white;
   text-align: center;
