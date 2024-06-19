@@ -1,11 +1,38 @@
-function toggleNav() {
+document.addEventListener("DOMContentLoaded", function() {
+  // Toggle navigation function
+  function toggleNav() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-        x.className += " responsive";
+      x.className += " responsive";
     } else {
-        x.className = "topnav";
+      x.className = "topnav";
     }
-}
+  }
+  window.toggleNav = toggleNav; // Expose function to global scope
+
+  // Intersection Observer for fade-in effect
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1
+  };
+
+  const fadeInScaleElements = document.querySelectorAll('.fade-in-scale');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  fadeInScaleElements.forEach(element => {
+    observer.observe(element);
+  });
+});
+
 
 
 
