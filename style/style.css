@@ -306,7 +306,6 @@ body {
 /* Header styles */
 header {
   background-blend-mode: multiply;
-  background-color: #444;
   background-image:"../image/chris.jpg";
   background-size: cover;
   background-position: center;
@@ -321,20 +320,6 @@ header {
   
 }
 
-/* style.css */
-
-/* General fade-in for text */
-/* Fade-in with scale effect */
-.fade-in-scale {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in-scale.visible {
-  opacity: 1;
-  transform: scale(1);
-}
 
 
 .icon-img{
