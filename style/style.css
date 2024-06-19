@@ -307,7 +307,7 @@ body {
 header {
   background-blend-mode: multiply;
   background-color: #444;
-  background-image: url('/src/image/chris.jpg');
+  background-image: url('image/chris.jpg');
   background-size: cover;
   background-position: center;
   color: white;
